@@ -1,4 +1,22 @@
+![GCP](https://img.shields.io/badge/GCP-Cloud-blue?logo=googlecloud)
+![Shell](https://img.shields.io/badge/Shell-Script-green?logo=gnubash)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 # Automated-Cloud-Infra-Deployment-on-GCP
+# Project Overview
+Automated deployment of a multi-tier Java web app (vProfile) on GCP
+using shell scripts. Covers VPC setup, private DNS, Cloud SQL, 
+Memcache, MIG with autoscaling, and HTTPS load balancer with SSL.
+# Tech-Stack/ Services Used
+| Service            | Purpose                        |
+|--------------------|-------------------------------|
+| GCP VPC            | Network isolation               |
+| Cloud SQL (MySQL)  | Managed database                |
+| Memorystore        | Memcached caching layer         |
+| Cloud NAT + Router | Private instance internet access|
+| MIG + Autoscaling  | High availability frontend      |
+| Cloud DNS (Private)| Internal service discovery      |
+| HTTPS Load Balancer| SSL termination + traffic mgmt  |
+| Certificate Manager| Google-managed SSL certs        |
 # Architecture Diagram
 ```mermaid
 graph TD
